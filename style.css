@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 400px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2em;
+  height: 100vh;
+  background-color: #fff;
+  color: #171717;
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+.App.dark-mode {
+  background-color: #181818;
+  color: #f7f7f7;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: #0c7dc9;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  padding-bottom: 2px;
+}
+
+a.dark-mode {
+  color: #0085dd;
+}
+
+.Profile-name {
+  font-weight: 700;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.Personal-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 2.5em;
+  column-gap: 1.5em;
+}
+
+.Personal-links .Link a {
+  font-weight: bold;
+  border: none;
+}
+
+.DarkMode-Container {
+  text-align: center;
+}
+
+.DarkMode {
+  border: none;
+  background: none;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+@media (prefers-color-scheme: dark) {
+  .App {
+    background-color: #181818;
+    color: #f7f7f7;
+  }
+
+  .App.light-mode {
+    background-color: #fff;
+    color: #171717;
+  }
+
+  a {
+    color: #0085dd;
+  }
+
+  a.light-mode {
+    color: #0c7dc9;
+  }
+}
